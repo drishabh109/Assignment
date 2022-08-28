@@ -10,7 +10,7 @@ server.use(express.json());
 server.use(cors());
 
 const connectionString =
-  "mongodb+srv://rishabh:rishabh@cluster0.vd513pd.mongodb.net/test";
+  "mongodb+srv://assignment:assignment@cluster0.jxesayy.mongodb.net/?retryWrites=true&w=majority/test";
 const PORT = process.env.PORT || 8000;
 
 const connectionWithMongoose = async () => {
