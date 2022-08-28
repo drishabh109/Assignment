@@ -11,7 +11,7 @@ server.use(cors());
 
 const connectionString =
   "mongodb+srv://assignment:assignment@cluster0.jxesayy.mongodb.net/?retryWrites=true&w=majority/test";
-const PORT = process.env.PORT || 8000;
+const PORT = 8000;
 
 const connectionWithMongoose = async () => {
   try {
@@ -76,7 +76,7 @@ server.post("/post", async (req, res) => {
 
 server.listen(PORT, () => {
   try {
-    console.log(`Server Running on Port: http://localhost:${PORT}`);
+    console.log(`Server Running on Port: ${PORT}`);
   } catch {
     (error) => console.log(`${error} did not connect`);
   }
